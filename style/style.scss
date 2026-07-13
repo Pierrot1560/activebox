@@ -479,9 +479,8 @@ a{
 }    
 
  .ad{
-        &__container{
-            background-color: rgba(92, 50, 73, 1);
-        }
+      background-color: rgba(92, 50, 73, 1);
+     
         
         &__swiper-slide{
             display: flex;
@@ -492,7 +491,6 @@ a{
             max-width: 570px;
         }
         &__image{
-            height: 100%;
     
             object-fit: cover;
         }
@@ -530,4 +528,18 @@ a{
             color: rgba(255, 255, 255, 1);
         }
        
+}
+.swiper-pagination{
+    position: static;
+
+    margin-top: 31px;
+    display: flex;
+    column-gap: 25px;
+}
+.swiper-pagination-bullet{
+    border: 1px rgba(126, 93, 111, 1) solid;
+    background-color: rgba(255, 255, 255, 1);
+}
+.swiper-pagination-bullet-active{
+    background-color: rgba(92, 50, 73, 1);
 }

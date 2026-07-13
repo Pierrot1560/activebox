@@ -513,7 +513,7 @@ a {
        column-gap: 6px;
 }
 
-.ad__container {
+.ad {
   background-color: rgb(92, 50, 73);
 }
 .ad__swiper-slide {
@@ -525,7 +525,6 @@ a {
   max-width: 570px;
 }
 .ad__image {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -558,4 +557,21 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 31px;
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+
+.swiper-pagination-bullet {
+  border: 1px rgb(126, 93, 111) solid;
+  background-color: rgb(255, 255, 255);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(92, 50, 73);
 }/*# sourceMappingURL=style.css.map */
