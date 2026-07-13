@@ -530,11 +530,9 @@ a{
        
 }
 .swiper-pagination{
-    position: static;
-
-    margin-top: 31px;
     display: flex;
-    column-gap: 25px;
+        justify-content: center;
+        align-content: center;
 }
 .swiper-pagination-bullet{
     border: 1px rgba(126, 93, 111, 1) solid;
@@ -542,4 +540,109 @@ a{
 }
 .swiper-pagination-bullet-active{
     background-color: rgba(92, 50, 73, 1);
+}
+.footer{
+background-color: #353C65;
+    &__container{
+        max-width: 1170px;
+        padding: 71px;
+        margin: 0 auto;
+        
+        
+    }
+     &__items{
+        
+    text-align: center;
+    display: flex;
+    column-gap: 30px;
+    @media screen and (max-width:$tablet) {
+        column-gap: 20px;
+    }
+    @media screen and (max-width:$mobile){
+        flex-direction: column;
+
+
+    }
+}
+&__item{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: max-content;
+    max-width: 370px;
+    width: 100%;
+     @media screen and (max-width:$mobile){
+        margin-bottom: 70px;
+     }
+    
+}
+
+}
+.item__title{
+font-size: 18px;
+line-height: 21px;
+font-weight: 700;
+color: #FFFFFF;
+text-transform: uppercase;
+margin-bottom: 29px;
+@media screen and (max-width:$tablet) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 18px;
+    
+}
+@media screen and (max-width:$mobile) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 34px;
+    
+}
+}
+.item__text{
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+color: #FFFFFF;
+text-transform: capitalize;
+@media screen and (max-width:$tablet) {
+    font-size: 14px;
+    line-height: 16px;
+    
+    
+}
+@media screen and (max-width:$mobile) {
+    font-size: 14px;
+    line-height: 16px;
+    
+    
+}
+}
+.item__links{
+    display: flex;
+    column-gap: 27px;
+    justify-content: center;
+    align-items: center;
+    margin-top:  48px;
+}
+
+.copyright{
+    background-color: #2C3154;
+
+    &__container{
+        max-width: 370px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    &__text{
+        color: #808080;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+    }
+    &__link{
+        color: #FFFFFF;
+    }
 }

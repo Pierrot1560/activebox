@@ -560,11 +560,9 @@ a {
 }
 
 .swiper-pagination {
-  position: static;
-  margin-top: 31px;
   display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  justify-content: center;
+  align-content: center;
 }
 
 .swiper-pagination-bullet {
@@ -574,4 +572,115 @@ a {
 
 .swiper-pagination-bullet-active {
   background-color: rgb(92, 50, 73);
+}
+
+.footer {
+  background-color: #353C65;
+}
+.footer__container {
+  max-width: 1170px;
+  padding: 71px;
+  margin: 0 auto;
+}
+.footer__items {
+  text-align: center;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__items {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__items {
+    flex-direction: column;
+  }
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  max-width: 370px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footer__item {
+    margin-bottom: 70px;
+  }
+}
+
+.item__title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+@media screen and (max-width: 1024px) {
+  .item__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 34px;
+  }
+}
+
+.item__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+  .item__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.item__links {
+  display: flex;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.copyright {
+  background-color: #2C3154;
+}
+.copyright__container {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+}
+.copyright__text {
+  color: #808080;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+.copyright__link {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
