@@ -49,23 +49,18 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .header {
-    padding: 38px 20px 39px;
+    padding: 38px 0 39px;
   }
 }
 @media screen and (max-width: 767px) {
   .header {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 .header__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-@media only screen and (max-width: 1024px) {
-  .header__container {
-    justify-content: space-between;
-  }
 }
 .header__links {
   display: flex;
@@ -193,10 +188,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .opportunity__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 }
 .opportunity .opportunity__item-icon {
@@ -289,34 +281,6 @@ a {
     line-height: 21px;
   }
 }
-.product__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
-}
-@media screen and (max-width: 1024px) {
-  .product__text {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-.product__title {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin-bottom: 36px;
-  color: rgb(255, 255, 255);
-}
-@media screen and (max-width: 1024px) {
-  .product__title {
-    font-size: 18px;
-    line-height: 21px;
-  }
-}
-
 .product__text {
   font-weight: 400;
   font-size: 18px;
@@ -428,7 +392,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .social {
-    padding: 49px;
+    padding: 49px 0;
   }
 }
 .social__container {
@@ -549,7 +513,7 @@ a {
   }
 }
 .ad__image-wrapper {
-  max-width: 570px;
+  max-width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .ad__image-wrapper {
@@ -569,20 +533,15 @@ a {
   width: 100%;
 }
 .ad__content {
-  padding: 116px 0;
   display: flex;
   flex-direction: column;
   text-align: left;
-}
-@media screen and (max-width: 1024px) {
-  .ad__content {
-    padding: 103px 0;
-  }
 }
 @media screen and (max-width: 767px) {
   .ad__content {
     text-align: center;
     align-items: flex-start;
+    padding: 0 0 95px;
   }
 }
 .ad__title-wrapper {
@@ -662,11 +621,11 @@ a {
 
 .footer {
   background-color: #353C65;
+  padding-top: 71px;
 }
 .footer__container {
-  max-width: 1170px;
-  padding: 71px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto 71px;
 }
 .footer__items {
   text-align: center;
@@ -683,12 +642,10 @@ a {
 @media screen and (max-width: 767px) {
   .footer__items {
     flex-direction: column;
+    row-gap: 40px;
   }
 }
 .footer__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-height: -moz-max-content;
   max-height: max-content;
   max-width: 370px;
@@ -696,10 +653,37 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer__item {
-    margin-bottom: 70px;
+    max-width: 100%;
   }
 }
 
+.item__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+  .item__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .item__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.item__links {
+  display: flex;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
 .item__title {
   font-size: 18px;
   line-height: 21px;
@@ -723,43 +707,13 @@ a {
   }
 }
 
-.item__text {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #FFFFFF;
-  text-transform: capitalize;
-}
-@media screen and (max-width: 1024px) {
-  .item__text {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .item__text {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-.item__links {
-  display: flex;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px;
-}
-
 .copyright {
   background-color: #2C3154;
+  padding: 24px 0;
 }
 .copyright__container {
   max-width: 370px;
-  width: 100%;
   margin: 0 auto;
-  padding: 24px;
 }
 .copyright__text {
   color: #808080;
